@@ -39,7 +39,6 @@ def make_session(bearer_token=None, extra_headers_dict=None):
         raise KeyError
 
     session = requests.Session()
-    session.trust_env = False
     headers = {'Accept-encoding': 'gzip',
                'User-Agent': 'twitterdev-search-tweets-python-labs/' + VERSION}
 
